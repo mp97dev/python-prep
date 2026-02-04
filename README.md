@@ -89,7 +89,14 @@ O visualizzarla su GitHub navigando nella cartella `doc/`.
 ## 📋 Prerequisiti
 
 - Python 3.x installato
-- Per gli esempi Pandas: `pip install pandas numpy`
+- Per gli esempi Pandas: 
+  ```bash
+  pip install -r requirements.txt
+  ```
+  oppure
+  ```bash
+  pip install pandas numpy
+  ```
 
 ## 💡 Suggerimenti per lo Studio
 
