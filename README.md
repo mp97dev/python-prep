@@ -60,6 +60,48 @@ Questo repository contiene materiale didattico completo per la preparazione agli
 
 ## 🚀 Come Usare
 
+### Setup Iniziale (Consigliato per Ubuntu)
+
+Per configurare un ambiente virtuale Python e installare tutte le dipendenze:
+
+```bash
+# Eseguire lo script di setup (su Ubuntu)
+./setup_venv.sh
+```
+
+Lo script:
+- Verifica che Python 3 sia installato
+- Crea un ambiente virtuale nella cartella `venv/`
+- Installa automaticamente le dipendenze da `requirements.txt`
+- Attiva l'ambiente virtuale
+
+Dopo l'esecuzione, l'ambiente virtuale sarà attivo e potrai eseguire gli esempi.
+
+**Per attivare manualmente l'ambiente virtuale in futuro:**
+```bash
+source venv/bin/activate
+```
+
+**Per disattivare l'ambiente virtuale:**
+```bash
+deactivate
+```
+
+### Setup Manuale
+
+Se preferisci non usare lo script automatico:
+
+```bash
+# Creare ambiente virtuale
+python3 -m venv venv
+
+# Attivare ambiente virtuale
+source venv/bin/activate
+
+# Installare dipendenze
+pip install -r requirements.txt
+```
+
 ### Eseguire gli Esempi
 
 Ogni file di esempio può essere eseguito direttamente:
@@ -89,13 +131,10 @@ O visualizzarla su GitHub navigando nella cartella `doc/`.
 ## 📋 Prerequisiti
 
 - Python 3.x installato
-- Per gli esempi Pandas: 
+- `python3-venv` per creare ambienti virtuali (Ubuntu: `sudo apt install python3-venv`)
+- Per gli esempi Pandas (installate automaticamente con `setup_venv.sh`):
   ```bash
   pip install -r requirements.txt
-  ```
-  oppure
-  ```bash
-  pip install pandas numpy
   ```
 
 ## 💡 Suggerimenti per lo Studio
